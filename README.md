@@ -27,4 +27,4 @@ CREATE TABLE tweet (
 
 **Endpoints**
 
-Les endpoints sont disponibles à partir de la [collection Postman](endpoints.postman_collection.json) disponible à la racine du projet : 
+Les endpoints sont disponibles à partir de la [collection Postman](endpoints.postman_collection.json) disponible à la racine du projet.
