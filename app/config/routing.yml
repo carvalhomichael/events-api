@@ -1,0 +1,6 @@
+app:
+    resource: '@AppBundle/Controller/DefaultController.php'
+    type: annotation
+tweets:
+    type:     rest
+    resource: AppBundle\Controller\TweetController

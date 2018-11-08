@@ -1,0 +1,12 @@
+AppBundle\Entity\Tweet:
+    properties:
+        username:
+            - NotBlank: ~
+            - Type: string
+            - Length:
+                max: 20
+        message:
+            - NotBlank: ~
+            - Type: string
+            - Length:
+                max: 1000

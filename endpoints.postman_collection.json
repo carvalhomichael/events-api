@@ -1,0 +1,97 @@
+{
+	"id": "e39757e9-2570-4720-9088-8b970a6d6f3f",
+	"name": "Events API",
+	"description": "",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"f0fa730a-243b-4dc2-a044-af33716297d9",
+		"dda1179f-11a1-4d33-aa87-73537ac26ad5"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "dda1179f-11a1-4d33-aa87-73537ac26ad5",
+			"name": "Create new event",
+			"url": "http://127.0.0.1:8001/events",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"username\": \"User1\",\n\t\"message\": \"Message 1\",\n\t\"hashtags\": \"#Tag1\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "f0fa730a-243b-4dc2-a044-af33716297d9",
+			"name": "Get events according to criterias",
+			"url": "http://127.0.0.1:8001/events?page=1&count=5&username=User1&hashtag=Tag1",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "page",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "count",
+					"value": "5",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "username",
+					"value": "User1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "hashtag",
+					"value": "Tag1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"username\": \"User2\",\n\t\"message\": \"Message 1\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		}
+	]
+}
